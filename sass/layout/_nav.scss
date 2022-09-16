@@ -1,0 +1,46 @@
+nav {
+    min-height: 5vh;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        font-weight: 800;
+        font-size: 2.4rem;
+        color: $font-color;
+
+        img {
+            margin-right: 1rem;
+        }
+
+        span {
+            color: $primary-color;
+        }
+    }
+}
+
+ul.nav-list {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    letter-spacing: -0.02em;
+    
+    display: flex;
+    align-items: center;
+    float: right;
+
+    li {
+        margin-left: 4.8rem;
+        width: max-content;
+        text-decoration: none;
+        
+        a {
+            color: $font-color;
+        }
+    }
+    
+    .nav-btn {
+        padding: 1.8rem 5rem;
+        color: white;
+    }
+}

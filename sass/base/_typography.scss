@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $font-color;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    font-size: 6.4rem;
+    line-height: 8rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6.5rem;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.02em;
+}
+
+.highlight {
+    color: $primary-color;
+}
+
+sub {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $primary-color;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.02em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
