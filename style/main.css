@@ -35,11 +35,9 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-@media only screen and (max-width: 40.625em) {
-  .row {
-    flex-direction: column;
-  }
+  /*     @media only screen and (max-width: $bp-sm) {
+          flex-direction: column;
+      }    */
 }
 
 .col {
@@ -344,11 +342,20 @@ ul {
 .services .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-template-rows: repeat(2, -webkit-min-content);
   grid-template-rows: repeat(2, min-content);
   grid-column-gap: 4rem;
   grid-row-gap: 5rem;
+}
+@media only screen and (max-width: 1200px) {
+  .services .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .services .cards {
+    grid-template-columns: 1fr;
+  }
 }
 .services .card {
   background: #FFFFFF;
@@ -526,6 +533,14 @@ ul {
 nav {
   min-height: 5vh;
 }
+@media only screen and (max-width: 40.625em) {
+  nav {
+    flex-direction: row;
+  }
+  nav .col-1-of-2 {
+    width: 50%;
+  }
+}
 nav .logo {
   display: flex;
   align-items: center;
@@ -562,4 +577,36 @@ ul.nav-list li a {
 ul.nav-list .nav-btn {
   padding: 1.8rem 5rem;
   color: white;
+}
+
+.nav__toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 1rem;
+}
+.nav__toggle > span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #181945;
+  transition: all 100ms center;
+  transform-origin: 3px 1px;
+  border-radius: 5rem;
+  transition: all 200ms;
+}
+.nav__toggle > span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 951px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .hide-for-mobile {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
