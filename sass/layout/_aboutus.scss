@@ -50,3 +50,12 @@
         }  
     }
 }
+
+.aboutus {
+    transition: all 1s ease;
+}
+
+.aboutus.appear {
+    opacity: 0;
+    transform: translateY(10rem);
+}

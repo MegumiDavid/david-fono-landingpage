@@ -106,5 +106,13 @@
             margin-bottom: 2rem;
         }
     }    
+}
 
+.services {
+    transition: all 1s ease;
+}
+
+.services.appear {
+    opacity: 0;
+    transform: translateY(10rem);
 }

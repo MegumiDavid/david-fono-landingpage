@@ -5,53 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
-    
-    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+    <title>DavidFono | Fácil e Profissional</title>
 </head>
 <body>
-    <nav class="nav">
-        <div class="container">
-  
-          <div class="row">
-            <div class="col-1-of-2">
-              <a href="#" class="logo">
-                <img src='./images/logo.png' alt="david-fono" /> 
-                David<span>Fono</span>
-              </a>
-            </div>
-            <div class="col-1-of-2">
-              <a href="#" id="btnHamburger" class="nav__toggle hide-for-desktop">
-                <span></span>
-                <span></span>
-                <span></span>
-              </a>
-              
-              <ul class='nav-list'>
-                <li class="hide-for-mobile ">
-                  <a href="#">Sobre Nós</a>
-                </li>
-                <li class="hide-for-mobile ">
-                <a href="#">Beneficos</a>
-                </li class="hide-for-mobile ">
-                <li class="hide-for-mobile ">
-                  <a href="#">Serviços</a>
-                </li class="hide-for-mobile ">
-                <li class="hide-for-mobile"">
-                  <a href="#" class="hide-for-mobile"">Cadastre-se</a>
-                </li class="hide-for-mobile ">
-                <li class="hide-for-mobile">
-                  <a href="#" class='btn nav-btn hide-for-mobile"'>Faça Login</a>
-                </li>
-              </ul>
-            </div>
-  
-          </div>
+
+  <nav class="nav">
+    <div class="container">
+      <div class="row">
+        <div class="nav__wrapper">
+          <a href="#" class="logo"><img src="./images/logo.svg" alt="logo" class="logo nav__logo">David <span>Logo.</span></a>
         </div>
-      </nav>
+        <div class="nav__wrapper">
+          <ul class="nav__list hide-for-mobile">
+            <li class="nav__item"><a href="#aboutus" class="nav__link">Sobre nós</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link">Servicos</a></li>
+            <li class="nav__item"><a href="#benefits" class="nav__link">Beneficios</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Cadastre-se</a></li>
+            <li class="nav__item"><a href="#" class="btn nav__btn">Log in</a></li>
+          </ul>
+          <a href="#" id="btnHamburger" class="nav__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <ul class="nav__menu hide-for-desktop">
+      <a href="aboutus" class="nav__link">
+        <li class="nav__item">
+          Sobre nós
+        </li>
+      </a>
+      <a href="services" class="nav__link">
+        <li class="nav__item">
+          Servicos
+        </li>
+      </a>
+      <a href="benefits" class="nav__link">
+        <li class="nav__item">
+          Beneficios
+        </li>
+      </a>
+      <a href="#" class="nav__link">
+        <li class="nav__item">
+          Cadastre-se
+        </li>
+      </a>
+      <a href="#" class="nav__link">
+        <li class="nav__item">
+          Log in
+        </li>
+      </a>
+    </ul>
+  </nav>
 
 
 
-      <header class='header'>
+      <header class='header appear'>
         <div class="container">
           <div class="grid">
               <div class="header__text">
@@ -65,7 +78,7 @@
       </header>
 
 
-      <section class="services">
+      <section class="services appear" id="services">
         <div class="container">
           <div class="title">
             <sub>Serviços</sub>
@@ -120,7 +133,7 @@
       </section>
 
 
-      <section class="aboutus">
+      <section class="aboutus appear" id="aboutus">
         <div class="container">
           <div class="row">
             <div class="col-1-of-2">
@@ -136,7 +149,7 @@
       </section>
 
 
-      <section class="benefits">
+      <section class="benefits appear" id="benefits">
         <div class="container">
           <div class="row">
             <div class="col-1-of-2">
@@ -151,10 +164,10 @@
         </div>
       </section>
 
-      <footer class="footer">
+      <footer class="footer ">
         <div class="container">
           <a href="#" class="logo">
-            <img src='./images/logo.png' alt="david-fono" /> 
+            <img src='./images/logo.svg' alt="david-fono" /> 
             David<span>Fono</span>
           </a>
           <div class="row">
@@ -163,17 +176,18 @@
               <div class="links">
                 <div class="title">link</div>
                 <ul>
-                  <li><a href="#">Serviços</a></li>
-                  <li><a href="#">Sobre nós</a></li>
-                  <li><a href="#">Beneficios</a></li>
+                  <li><a href="#services">Serviços</a></li>
+                  <li><a href="#aboutus">Sobre nós</a></li>
+                  <li><a href="#benefits">Beneficios</a></li>
                 </ul>
               </div>
   
               <div class="links">
                 <div class="title">Contatos</div>
                 <ul>
-                  <li><i class="fa-solid fa-envelope icon"></i><a href="#">contato@david.com.br</a></li>
-                  <li><i class="fa-solid fa-phone"></i><a href="#">+55 11 3819-0364</a></li>
+                  <li><i class="fa-solid fa-envelope icon"></i><a href="mailto: contato@david.com.br" href="#">contato@david.com.br</a></li>
+                  <li><i class="fa-solid fa-phone"></i><a target="_blank"
+                    href="tel:+55 19 98889-0000">+55 19 98889-0000</a></li>
                 </ul>
               </div>
             </div>
@@ -184,5 +198,6 @@
 
 
       <script src="https://kit.fontawesome.com/8bc26bac35.js" crossorigin="anonymous"></script>
+      <script src="js/script.js"></script>
 </body>
 </html>
