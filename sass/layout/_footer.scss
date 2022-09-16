@@ -23,20 +23,46 @@
     .row {
         display: flex;
         align-items: flex-start;
+
+        @media only screen and (max-width: $bp-md-footer) {
+            flex-direction: column;
+            align-items: flex-start;
+        }  
     }
 
 
     &__text {
         max-width: 550px;
         font-size: 1.8rem;
+        
+        @media only screen and (max-width: $bp-bg-footer) {
+            max-width: 350px;
+        }  
+        @media only screen and (max-width: $bp-md-footer) {
+            margin-bottom: 5rem;
+        }  
     }
 
     .links-wrapper {
         display: flex;
+
+        @media only screen and (max-width: 500px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }  
     }
 
     .links:last-child {
         margin-left: 10rem;
+        
+        @media only screen and (max-width: $bp-bg-footer) {
+            margin-left: 5rem;
+        }  
+        
+        @media only screen and (max-width: 500px) {
+            margin-left: 0rem;
+            margin-top: 2.5rem;
+        }  
     }
 
     .links {

@@ -6,10 +6,28 @@
 
     padding: 10rem 0rem;
 
+    @media only screen and (max-width: $bp-bg) {
+        .row {
+            flex-direction: column;
+        }
+
+        .col-1-of-2 {
+            width: 100%;
+        }
+
+        text-align: center;
+    }   
+
     img {
         width: 90%;
         height: 90%;
         position: relative;
+        
+        @media only screen and (max-width: $bp-bg) {
+            width: 90%;
+            height: 90%;
+            margin: 0 5%;
+        }   
     }
     
     h2 {
@@ -22,5 +40,11 @@
 
     p {
         padding-bottom: 2rem;
+        
+        @media only screen and (max-width: $bp-bg) {
+            &:last-child {    
+                padding-bottom: 8rem;
+            }
+        }  
     }    
 }

@@ -9,7 +9,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-@media only screen and (max-width: 53.125em) {
+@media only screen and (max-width: 900px) {
   html {
     font-size: 55.5%;
   }
@@ -160,15 +160,48 @@ ul {
   display: flex;
   align-items: flex-start;
 }
+@media only screen and (max-width: 750px) {
+  .footer .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .footer__text {
   max-width: 550px;
   font-size: 1.8rem;
 }
+@media only screen and (max-width: 1000px) {
+  .footer__text {
+    max-width: 350px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .footer__text {
+    margin-bottom: 5rem;
+  }
+}
 .footer .links-wrapper {
   display: flex;
 }
+@media only screen and (max-width: 500px) {
+  .footer .links-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .footer .links:last-child {
   margin-left: 10rem;
+}
+@media only screen and (max-width: 1000px) {
+  .footer .links:last-child {
+    margin-left: 5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer .links:last-child {
+    margin-left: 0rem;
+    margin-top: 2.5rem;
+  }
 }
 .footer .links .title {
   font-weight: 700;
@@ -204,10 +237,29 @@ ul {
   overflow-y: hidden;
   padding: 10rem 0rem;
 }
+@media only screen and (max-width: 900px) {
+  .aboutus {
+    text-align: center;
+    padding: 2.5rem 0rem;
+  }
+  .aboutus .row {
+    flex-direction: column;
+  }
+  .aboutus .col-1-of-2 {
+    width: 100%;
+  }
+}
 .aboutus img {
   width: 90%;
   height: 90%;
-  position: relative;
+}
+@media only screen and (max-width: 900px) {
+  .aboutus img {
+    width: 90%;
+    height: 90%;
+    margin: 0 5%;
+    margin-bottom: 10rem;
+  }
 }
 .aboutus h2 {
   padding-bottom: 4rem;
@@ -218,6 +270,11 @@ ul {
 .aboutus p {
   padding-bottom: 2rem;
 }
+@media only screen and (max-width: 900px) {
+  .aboutus p:last-child {
+    padding-bottom: 8rem;
+  }
+}
 
 .benefits {
   background: #fff;
@@ -226,10 +283,28 @@ ul {
   overflow-y: hidden;
   padding: 10rem 0rem;
 }
+@media only screen and (max-width: 900px) {
+  .benefits {
+    text-align: center;
+  }
+  .benefits .row {
+    flex-direction: column;
+  }
+  .benefits .col-1-of-2 {
+    width: 100%;
+  }
+}
 .benefits img {
   width: 90%;
   height: 90%;
   position: relative;
+}
+@media only screen and (max-width: 900px) {
+  .benefits img {
+    width: 90%;
+    height: 90%;
+    margin: 0 5%;
+  }
 }
 .benefits h2 {
   padding-bottom: 4rem;
@@ -240,12 +315,27 @@ ul {
 .benefits p {
   padding-bottom: 2rem;
 }
+@media only screen and (max-width: 900px) {
+  .benefits p:last-child {
+    padding-bottom: 8rem;
+  }
+}
 
 .services .container {
   padding: 8rem 3rem;
 }
+@media only screen and (max-width: 900px) {
+  .services {
+    text-align: center;
+  }
+}
 .services .title {
   max-width: 65rem;
+}
+@media only screen and (max-width: 900px) {
+  .services .title {
+    max-width: 100%;
+  }
 }
 .services h2 {
   margin-top: 2rem;
