@@ -1,0 +1,107 @@
+.faq {
+  background-color: white;
+
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .accordion {
+    margin: 10rem 20rem;
+  }
+
+  .accordion-item {
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem 3rem;
+
+    &--1 {
+      background-color: #dbeffa;
+    }
+    &--2 {
+      background-color: #dcfadb;
+    }
+    &--3 {
+      background-color: #f6dbfa;
+    }
+    &--4 {
+      background-color: #faefdb;
+    }
+
+    &:target .answer {
+      max-height: 20rem;
+      transition: max-height 700ms;
+    }
+
+    &:target .fa-plus {
+      display: none;
+    }
+
+    &:target .fa-minus {
+      display: block;
+    }
+  }
+
+  .accordion-link {
+    color: $font-color;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    i {
+      padding: 0.5rem;
+    }
+
+    .fa-minus {
+      display: none;
+    }
+  }
+
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0.6rem;
+      height: 90%;
+      background-color: #ff7a7a;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      border-radius: 1rem;
+    }
+
+    p {
+      padding: 2rem;
+    }
+
+    &--1 {
+      background-color: #a8d8f2;
+    }
+    &--2 {
+      background-color: #a0f09d;
+    }
+    &--3 {
+      background-color: #ed9ff9;
+    }
+    &--4 {
+      background-color: #fee3b0;
+    }
+  }
+}
