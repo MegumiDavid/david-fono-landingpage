@@ -889,6 +889,16 @@ ul.nav-list {
 .faq .accordion {
   margin: 10rem 20rem;
 }
+@media only screen and (max-width: 900px) {
+  .faq .accordion {
+    margin: 10rem 15rem;
+  }
+}
+@media only screen and (max-width: 40.625em) {
+  .faq .accordion {
+    margin: 10rem 0;
+  }
+}
 .faq .accordion-item {
   border-radius: 1rem;
   margin-bottom: 2rem;
@@ -907,7 +917,7 @@ ul.nav-list {
   background-color: #faefdb;
 }
 .faq .accordion-item:target .answer {
-  max-height: 20rem;
+  max-height: 30rem;
   transition: max-height 700ms;
 }
 .faq .accordion-item:target .fa-plus {

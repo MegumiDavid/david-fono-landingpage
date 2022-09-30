@@ -15,6 +15,12 @@
 
   .accordion {
     margin: 10rem 20rem;
+    @media only screen and (max-width: $bp-bg) {
+      margin: 10rem 15rem;
+    }
+    @media only screen and (max-width: $bp-sm) {
+      margin: 10rem 0;
+    }
   }
 
   .accordion-item {
@@ -36,7 +42,7 @@
     }
 
     &:target .answer {
-      max-height: 20rem;
+      max-height: 30rem;
       transition: max-height 700ms;
     }
 
