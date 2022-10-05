@@ -37,7 +37,7 @@ h1 {
   font-weight: 700;
   letter-spacing: -0.03em;
   font-size: 6.4rem;
-  line-height: 6rem;
+  line-height: 8rem;
 }
 
 h2 {
@@ -177,35 +177,35 @@ body::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 85rem;
+  max-width: 65rem;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
   background: #fff;
   text-align: center;
   border-radius: 4.8rem;
-  padding: 8rem 12rem;
+  padding: 10rem 10rem;
   z-index: 50;
-  margin-top: 5rem;
 }
 @media only screen and (max-width: 550px) {
   .box {
-    padding: 7rem 7rem;
+    padding: 8.5rem 8.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
   .box {
-    padding: 7rem 6rem;
-    max-width: 80rem;
+    padding: 7.5rem 7.5rem;
+    max-width: 50rem;
   }
 }
 @media only screen and (max-width: 450px) {
   .box {
-    padding: 6rem 5rem;
+    padding: 7rem 7rem;
     max-width: 45rem;
   }
 }
 .box h1 {
+  margin-bottom: 9rem;
   font-size: 5.52264rem;
 }
 .box .btnWrapper {
@@ -220,87 +220,10 @@ body::after {
   }
 }
 .box .btn {
-  width: 80%;
+  width: 100%;
   font-size: 2.5rem;
-  border: none;
   cursor: pointer;
-  margin-top: 4rem;
-}
-@media only screen and (max-width: 450px) {
-  .box .btn {
-    width: 90%;
-  }
 }
 .box .btn:first-of-type {
   margin-bottom: 3.5rem;
-}
-.box form {
-  width: 120%;
-  margin-top: 6rem;
-}
-@media only screen and (max-width: 550px) {
-  .box form {
-    width: 100%;
-  }
-}
-.box form label {
-  font-weight: 400;
-  font-size: 2rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin-left: 0.5rem;
-}
-.box form .inputWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 0.8rem;
-  position: relative;
-}
-.box form .inputWrapper p {
-  color: rgba(3, 146, 0, 0.5);
-  font-size: 1.5rem;
-  margin-left: 0.5rem;
-  font-weight: 600;
-}
-.box form .inputWrapper button {
-  cursor: pointer;
-}
-.box form .inputWrapper button i {
-  z-index: 1;
-  position: absolute;
-  bottom: 25.5%;
-  right: 6.5%;
-  font-size: 2.5rem;
-  /* color: rgba(238, 85, 85, .8); */
-  color: rgba(0, 0, 0, 0.5);
-}
-.box form input {
-  margin-top: 0.5rem;
-  width: 100%;
-  height: 7rem;
-  padding: 1rem;
-  font-size: 2rem;
-  border-radius: 15.3407px;
-  border: 1.5px solid rgba(0, 0, 0, 0.5);
-  color: #181945;
-  outline: none !important;
-}
-.box form input.error {
-  border: 2px solid rgba(238, 85, 85, 0.5);
-}
-.box form input.success {
-  border: 2px solid rgba(3, 146, 0, 0.5);
-}
-
-.cta {
-  transform: translateY(20%);
-}
-.cta a {
-  color: #449BC0;
-  transition: 200ms;
-}
-.cta a:hover {
-  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

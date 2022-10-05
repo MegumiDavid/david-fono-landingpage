@@ -177,14 +177,14 @@ body::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 85rem;
+  max-width: 65rem;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
   background: #fff;
   text-align: center;
   border-radius: 4.8rem;
-  padding: 8rem 12rem;
+  padding: 6rem 7rem;
   z-index: 50;
   margin-top: 5rem;
 }
@@ -195,13 +195,13 @@ body::after {
 }
 @media only screen and (max-width: 480px) {
   .box {
-    padding: 7rem 6rem;
-    max-width: 80rem;
+    padding: 6rem 6rem;
+    max-width: 50rem;
   }
 }
 @media only screen and (max-width: 450px) {
   .box {
-    padding: 6rem 5rem;
+    padding: 5rem 5rem;
     max-width: 45rem;
   }
 }
@@ -235,13 +235,8 @@ body::after {
   margin-bottom: 3.5rem;
 }
 .box form {
-  width: 120%;
+  width: 100%;
   margin-top: 6rem;
-}
-@media only screen and (max-width: 550px) {
-  .box form {
-    width: 100%;
-  }
 }
 .box form label {
   font-weight: 400;
@@ -255,7 +250,7 @@ body::after {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
   position: relative;
 }
 .box form .inputWrapper p {
@@ -263,18 +258,6 @@ body::after {
   font-size: 1.5rem;
   margin-left: 0.5rem;
   font-weight: 600;
-}
-.box form .inputWrapper button {
-  cursor: pointer;
-}
-.box form .inputWrapper button i {
-  z-index: 1;
-  position: absolute;
-  bottom: 25.5%;
-  right: 6.5%;
-  font-size: 2.5rem;
-  /* color: rgba(238, 85, 85, .8); */
-  color: rgba(0, 0, 0, 0.5);
 }
 .box form input {
   margin-top: 0.5rem;
@@ -293,14 +276,12 @@ body::after {
 .box form input.success {
   border: 2px solid rgba(3, 146, 0, 0.5);
 }
-
-.cta {
-  transform: translateY(20%);
-}
-.cta a {
-  color: #449BC0;
-  transition: 200ms;
-}
-.cta a:hover {
-  text-decoration: underline;
+.box form i {
+  z-index: 1;
+  position: absolute;
+  bottom: 38.5%;
+  right: 5%;
+  font-size: 2.5rem;
+  /* color: rgba(238, 85, 85, .8); */
+  color: #81C880;
 }/*# sourceMappingURL=main.css.map */
