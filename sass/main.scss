@@ -1,21 +1,253 @@
-@import "abstracts/variables";
-
+// @import "abstracts/variables";
 // @import "base/animations";
-@import "base/base";
-@import "base/grid";
+// @import "base/base";
+// @import "base/grid";
+// @import "base/typography";
+// @import "base/utilities";
+// @import "components/button";
+// @import "layout/footer";
+// @import "layout/aboutus";
+// @import "layout/benefits";
+// @import "layout/services";
+// @import "layout/header";
+// @import "layout/nav";
+// @import "layout/faq";
 
-@import "base/typography";
-/*
-@import "base/utilities";
-*/
+$primary-color: #449BC0;
+$primary-color-dark: #5A90AC;
+$secounday-color: #DBEFFA;
+$font-color: #181945;
 
-@import "components/button";
-@import "layout/footer";
-/*
-*/
-@import "layout/aboutus";
-@import "layout/benefits";
-@import "layout/services";
-@import "layout/header";
-@import "layout/nav";
-@import "layout/faq";
+$bp-bg: 53.125em; 
+$bp-md: 46.875em; 
+$bp-sm: 40.625em; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth; 
+    
+    @media only screen and (max-width: $bp-bg) {
+        font-size: 55.5%;
+    }   
+
+    @media only screen and (max-width: $bp-md) {
+        font-size: 50%;
+    }   
+
+    @media only screen and (max-width: $bp-sm) {
+        font-size: 47%;
+    }   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $font-color;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    font-size: 6.4rem;
+    line-height: 8rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6.5rem;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.02em;
+}
+
+.highlight {
+    color: $primary-color;
+}
+
+sub {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $primary-color;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.02em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    background: $primary-color;
+    border-radius: 1.6rem;
+    padding: 2rem 5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 300ms ease;
+    flex: 1;
+
+    &:hover {
+        background-color: rgba($primary-color,0.8);
+    }
+}
+
+.btn-outline {
+    padding: 2rem 4rem;
+    background: rgba(81, 196, 209, 0.18);
+    color: $primary-color;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    transition: all 300ms ease;
+
+    margin-top: 5rem;
+
+    .icon {
+        margin-left: 2rem;
+    }
+
+    &:hover {
+        color: #fff;
+        background-color: $primary-color;
+    }
+}
+
+body {
+    background-color: $secounday-color;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+
+    &::before {
+        background: url('../images/rectangle1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: 70%;
+        width: 70%;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -50;
+    }
+
+    &::after {
+        background: url('../images/rectangle2.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        height: 70%;
+        width: 70%;
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -50;
+    }
+}
+
+.line {
+    background: url('../images/lines.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+}
+
+.container {
+    margin: auto;
+    min-width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 65rem;
+    height: min-content;
+    background: #fff;
+    text-align: center;
+    border-radius: 4.8rem;
+    padding: 10rem 10rem;
+    z-index: 50;
+    
+    @media only screen and (max-width: 550px) {
+        padding: 8.5rem 8.5rem;
+    }  
+    
+    @media only screen and (max-width: 480px) {
+        padding: 7.5rem 7.5rem;
+        max-width: 50rem;
+    }  
+    
+    @media only screen and (max-width: 450px) {
+        padding: 7rem 7rem;
+        max-width: 45rem;
+    }  
+
+    h1 {
+        margin-bottom: 9rem;
+        font-size: 5.52264rem;
+    }
+
+    .btn-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        
+        @media only screen and (max-width: 480px) {
+            width: 90%;
+        }  
+    }
+    
+    .btn {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
+    .btn:first-of-type {
+        margin-bottom: 3.5rem;
+    }
+}
